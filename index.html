@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen bg-teal-100 grid place-items-center">
+      <main
+        style="background-image: url(bg.jpg)"
+        class="relative h-[90%] aspect-[8.5/11] flex flex-col items-center justify-end bg-no-repeat bg-cover bg-[top_left_-8rem]"
+      >
+        <div class="absolute inset-0 center-0">
+          <div
+            class="h-[66%] w-full bg-gradient-to-t from-black backdrop-blur-sm"
+          ></div>
+          <div class="h-[34%] w-full bg-black"></div>
+        </div>
+        <h1
+          class="absolute -top-10 tracking-wide text-[12rem] font-sans text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-sky-500"
+        >
+          CODE
+        </h1>
+        <img
+          src="me.png"
+          alt="me"
+          class="absolute h-[95%] aspect-ratio[9/16]"
+        />
+        <main class="absolute text-white grid grid-cols-2 space-x-8 px-8 pb-8">
+          <section>
+            <h1 class="text-5xl font-medium mb-4 text-blue-500">Me in 2022</h1>
+            <p class="tracking-wide text-pink-300 indent-4 text-lg">
+              Here are technologies that I'm planning to learn this year.
+            </p>
+          </section>
+          <section class="pt-6 text-center">
+            <h1 class="text-2xl text-blue-500 mb-2">Web Development:</h1>
+            <p class="tracking-wide text-pink-300">
+              Sveltekit, TailwindCSS, Rest API, Firebase, Supabase
+            </p>
+          </section>
+        </main>
+      </main>
+    </div>
+  </body>
+</html>
